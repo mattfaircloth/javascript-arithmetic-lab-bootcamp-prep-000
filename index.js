@@ -23,7 +23,7 @@ function dec(n) {
 }
 
 function makeInt(n) {
-  if (n !== 'number') {
+  if (typeof n !== 'number') {
     return NaN;
   } else {
     return parseInt(n, 10);
