@@ -31,3 +31,13 @@ function makeInt(n) {
     return NaN;
   }
 }
+
+function preserveDecimal(n) {
+  if (typeof n === 'string') {
+    return parseFloat(n);
+  } else if (typeof n === 'number') {
+    return n;
+  } else {
+    return NaN;
+  }
+}
